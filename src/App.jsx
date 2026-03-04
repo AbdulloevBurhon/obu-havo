@@ -116,7 +116,7 @@ function App() {
        value={city}
        placeholder="Enter city name"
        className="search-input"
-       onChange={(e) => setCity(e.target.value)} // Update city state on input change
+       onChange={(e) => setCity(e.target.value)}
       />
      </div>
     </div>

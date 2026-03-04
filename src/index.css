@@ -1,4 +1,4 @@
-/* Основные стили */
+
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
@@ -20,7 +20,7 @@ p {
   margin: 0;
 }
 
-/* Эффект стекла для app-container */
+
 .widget-container {
   text-align: center;
   max-width: 400px;
