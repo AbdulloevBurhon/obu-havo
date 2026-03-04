@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './index.css'
 
-const KEY = '9ed25195e11d4859947102643242211'
+const KEY = import.meta.env.VITE_WEATHER_KEY
 
 function App() {
  const [city, setCity] = useState('')
@@ -48,7 +48,7 @@ function App() {
     const query = city.trim() ? city : `${coords.latitude},${coords.longitude}`
 
     const res = await fetch(
-     `http://api.weatherapi.com/v1/current.json?key=${KEY}&q=${query}`,
+     `https://api.weatherapi.com/v1/current.json?key=${KEY}&q=${query}`,
      {
       signal
      }
